@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+<div id="container">
+
+    <div><h1 id="title">Word Scramblle</h1></div><br>
+
+    <div id="button-gris"><p id="relowf">relowf</p></div><br>
+
+    <div class="descripciones">
+          <div id="nivel">
+            <p><em id="tries">Tries(0/5):</em><span class="circulos" id="span1"></span> <span class="circulos" id="span2"></span> <span class="circulos" id="span3"></span> <span class="circulos" id="span4"></span> <span class="circulos" id="span5"></span></p>
+          </div> 
+        
+          <div id="mistakes">
+            <p>Results: <em id="em"></em></p> 
+          </div>
+    </div><br>
+
+
+    <div id="container-palabras">
+
+         <div class="container-palabras display-none" id="palabra1">
+          <button>f</button> <button>l</button> <button>o</button> <button>w</button>
+         </div>
+
+         <div class="container-palabras display-none" id="palabra2">
+          <button>P</button> <button>l</button> <button>a</button> <button>n</button> 
+         </div>
+
+         <div class="container-palabras display-none" id="palabra3">
+          <button>M</button> <button>o</button> <button>u</button> 
+         </div>
+
+         <div class="container-palabras display-none" id="palabra4">
+          <button>A</button> <button>p</button> <button>p</button>
+         </div>
+
+         <div class="container-palabras display-none" id="palabra5">
+          <button>M</button> <button>u</button> <button>s</button> 
+         </div>
+
+         <div class="container-palabras display-none" id="palabra6">
+          <button>P</button> <button>u</button> <button>r</button> <button>p</button>
+         </div>
+
+         <div class="container-palabras display-none" id="palabra7">
+          <button>B</button> <button>u</button> <button>t</button> <button>t</button> 
+         </div>
+
+         <div class="container-palabras display-none" id="palabra8">
+          <button>C</button> <button>a</button> <button>m</button> <button>e</button>
+         </div>
+
+         <div class="container-palabras display-none" id="palabra9">
+          <button>G</button> <button>u</button> <button>i</button> <button>t</button>
+         </div>
+
+         <div class="container-palabras display-none" id="palabra10">
+          <button>B</button> <button>a</button> <button>n</button> <button>a</button>
+         </div>
+       
+         <div><input type="text" maxlength="1"  name="e" class="input display-none" id="input1"> <input maxlength="1" class="input display-none" name="r" id="input2"></div>
+
+    </div><br>
+
+    <div class="container-random">
+          <button id="random" onclick="generarPalabra('palabra')">Random</button>
+          <button id="reset" onclick="restablecer()">Reset</button>
+    </div>
+      
+</div>
+
+<script src="palabras.js"></script>
+
+</body>
+</html>
