@@ -45,9 +45,9 @@ function generarPalabra() {
 
 function registrarLetras() {
     if(secuenciaRandom.length >= 1) {
-        let letra1 = document.getElementById("input1").value;
+        let letra1 = document.getElementById("input1").value.tolowerCase();
         letrasIngresadas.push(letra1);
-        let letra2 = document.getElementById("input2").value;
+        let letra2 = document.getElementById("input2").value.tolowerCase();
         letrasIngresadas.push(letra2);
     }
 }
